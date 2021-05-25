@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/crearCuenta.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Division A del header -->
+        <div class="header1">
+            <div class="logo">
+                <img src="/img/logo-mercado-liebre.svg" alt="logo de la empresa">
+            </div>
+            <div class="barra-de-busqueda">
+                <form action="/" method="post" target="_blank">
+                    <input type="search" placeholder="Buscar" class="serch">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <p><i class="fas fa-hand-holding"></i>compra en cuotas y sin tarjetas de credito</p>
+        </div>
+
+        <!-- Division B del header-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tienda oficial</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+               <!--  <li><a href=""></i>Crea tu cuenta</a> <i class="far fa-id-card"></i></li>-->
+                <li><a href="/login"></i>Ingresa</a> <i class="fas fa-sign-out-alt"></i></li>
+                <li><a style="margin-right: 7px;" href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </nav>
+
+        <!-- Division C del header -->
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+
+
+    </header>
+    <!-- Fin del header -->
+
+    <h2>Formulario de registro</h2>
+
+    <main>
+        
+        <form action="/" method ="POST">
+            <fieldset>
+                <label for="name">Nombre Completo:</label>
+                <input class="input" type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+
+
+                <label for="nameUser">Nombre de usuario:</label>
+                <input  class="input" type="text" name="nameUser" id="nameUser" placeholder="Ingrese un nombre de ususario">
+
+
+                <label for="fechaNacimiento">Seleccione su fecha de nacimiento:</label>
+                <input class="input" type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+
+
+                <label for="address">Domicilio:</label>
+                <input class="input" type="text" name="address" id="address" placeholder="Ej: Perez 2014" required>
+
+            </fieldset>
+            <fieldset class="perfil">
+               
+             <ul class="sectionA">
+                    <label for="perfil"><b>Perfil:</b></label>
+                   <ul><input style="margin-bottom: 5px;" type="radio" name="categorias"> Comprar</ul>
+                    <ul><input type="radio" name="categorias"> Vender</ul>
+                </ul>
+
+
+                <ul class="sectionB">
+                    <label for="intereses"><b>Categorias de interes:</b></label>
+                   <ul> <input style="margin-top: 5px;" type="checkbox" name="categorias" value="electro">  Electro </ul>
+                    <ul><input type="checkbox" name="categorias" value="moda">  Moda</ul>
+                    <ul><input type="checkbox" name="categorias" value="hogar">  Hogar</ul>
+                   <ul> <input type="checkbox" name="categorias" value="jugeteria">  Jugueteria</ul>
+                    <ul><input type="checkbox" name="categorias" value="vidaSana">  Vida sana </ul>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <label for="foto"><b>Foto de usuario</b></label>
+                <input class="input"  type="file" name="foto" id="foto">
+            </fieldset>
+            <fieldset>
+                <label for="password">Contraseña</label>
+                <input class="input" type="password" required>
+                <label for="password2">Confirmar contraseña</label>
+                <input class="input" type="password" name="password2" id="password2" required>
+            </fieldset>
+            <fieldset class="botones">
+                 <button class="botona" type="submit">ENVIAR</button>
+                 <button class="botona" type="reset">BORRAR</button>
+            </fieldset>
+               
+             
+
+        </form>
+
+    </main>
+</body>
+
+</html>

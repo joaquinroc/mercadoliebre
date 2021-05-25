@@ -1,0 +1,389 @@
+/************** GENERALES  ***************/
+
+body {
+  margin: 0 auto;
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***************** HEADER ****************/
+
+header {
+  background-color: #eac926;
+  font-family: "Roboto";
+}
+
+/* -- Division A del header -- */
+
+.header1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50%;
+}
+
+
+.logo img {
+  width: 80%;
+  height: 100%;
+  
+}
+
+
+.barra-de-busqueda {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  margin: 0px 0px 5px 10px;
+}
+
+.serch {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.header1 p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* -- Division B del header -- */
+.navbar {
+  display: none;
+}
+
+.navbar ul {
+  padding-left: 15px;
+}
+
+/* -- Division C del header -- */
+.fa-bars {
+  color: #03264c;
+  font-size: 2rem;
+  margin-left: 50%;
+  margin-bottom: 10px;
+}
+
+/***************** BODY ***************/
+
+.banner {
+  width: 100%;
+}
+
+article img {
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+
+/***** MAIN *******/
+
+.producto:hover{
+  background-color: rgb(175, 183, 192);
+
+}
+
+
+
+main {
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Tarjeta de producto completa */
+.producto {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+
+/* Info del producto(sin img) */
+.info-producto {
+  display: none;
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+/****** FOOTER *******/
+
+
+
+footer {
+  text-align: center;
+  max-width: 100%;
+  
+}
+
+
+
+.footer-article {
+  border-top: 1px gray solid;
+  margin: 10px 40px 0px 40px;
+  padding-top: 10px;
+}
+
+.icon-footer {
+  color: #03264c;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+                  /********** MEDIA QUERYS TABLET *******/
+
+@media (min-width: 361px) {
+  /* <----------- 361px --------->
+
+    
+    /****         HEADER        *****/
+
+  header {
+    width: 100vw;
+  }
+
+  /* -- Division A del header -- */
+
+  .header1 {
+    display: flex;
+  }
+
+
+
+  .logo {
+    width: 33.3%;
+  }
+
+  .barra-de-busqueda {
+    display: flex;
+    width: 33.3%;
+    align-content: center;
+  }
+
+  .header1 p {
+    width: 32%;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  /* -- Division B del header -- */
+
+  .navbar {
+    display: flex;
+  }
+
+  .serch {
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 50%;
+
+    padding-left: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 3px;
+    font-size: 12px;
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
+  a:hover,
+  a:active {
+    font-size: 14px;
+    
+  }
+  
+
+  li {
+    padding: 5px;
+  }
+
+  li i {
+    font-size: 13px;
+  }
+
+  /* -- Division C del header -- */
+
+  .burger-menu {
+    display: none;
+  }
+
+          /* **** BODY ****/
+
+  /** TARJETA DE PRODUCTOS **/
+
+  .seccion-de-productos {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .producto {
+    box-shadow: 10px 5px 5px gray;
+    width: 48%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .info-producto {
+    display: flex;
+    border-top: 1px #ebebeb solid;
+    padding: 10px 8px 0px 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+ 
+  .icono-truck
+ /* ICONO */ {
+    font-size: 20px;
+    color: green;
+    
+  }
+
+  .precio {
+    display: flex;
+    font-size: 16px;
+    width: 30%;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+  }
+
+  .descuento {
+    display: flex;
+    color: green;
+    justify-content: flex-start;
+    width: 70%;
+    padding-left: 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+
+  }
+
+  .camion/* DIV QUE CONTIENE EL ICONO */ {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border-radius: 50%;
+    border-color: green;
+  }
+
+  .nombre-articulo {
+    display: flex;
+    
+    width: 100%;
+    
+    margin-top: 2px;
+  }
+}
+
+                /************* MEDIA QUERY DESKTOP **********/
+
+@media (min-width: 769px) {
+  /*** HEADER ***/
+
+  .serch {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .header1 p {
+    font-size: 21px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  
+  a:hover,
+  a:active {
+    font-size: 17px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 2px;
+      }
+
+  li i {
+    font-size: 16px;
+  }
+
+  article img {
+    width: 90%;
+  }
+
+  /*** MAIN ***/
+
+  main {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .seccion-de-productos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .producto {
+    box-shadow: 10px 5px 5px gray;
+    width: 23%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .precio {
+      font-size: 18px;
+      width: 40%
+  }
+
+  .descuento {
+      width: 60%;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 0px;
+  }
+
+  /*** FOOTER ****/
+
+  .footer-article {
+    border-top: 1px gray solid;
+    padding-top: 10px;
+    margin: 40px 150px 0px 150px;
+  }
+}
