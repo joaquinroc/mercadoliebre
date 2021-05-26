@@ -90,13 +90,6 @@ article img {
 
 /***** MAIN *******/
 
-.producto:hover{
-  background-color: rgb(175, 183, 192);
-
-}
-
-
-
 main {
   width: 100vw;
   text-align: center;
@@ -115,6 +108,13 @@ main {
   margin-bottom: 10px;
   transition: all 0.5s;
 }
+
+.producto:hover{
+  background-color: rgb(175, 183, 192);
+  box-shadow: 10px 5px 5px gray;
+
+}
+
 
 
 /* Info del producto(sin img) */
@@ -140,7 +140,7 @@ footer {
 
 .footer-article {
   border-top: 1px gray solid;
-  margin: 10px 40px 0px 40px;
+  margin: 20px 40px 10px 40px;
   padding-top: 10px;
 }
 
@@ -186,23 +186,24 @@ footer {
     font-size: 14px;
   }
 
+  .serch {
+    width: 60%;
+    margin-top: 30px;
+  }
+
   /* -- Division B del header -- */
 
   .navbar {
     display: flex;
   }
 
-  .serch {
-    width: 60%;
-    margin-top: 30px;
-  }
+  
 
   nav ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     width: 50%;
-
     padding-left: 30px;
   }
 
@@ -227,10 +228,6 @@ footer {
     padding: 5px;
   }
 
-  li i {
-    font-size: 13px;
-  }
-
   /* -- Division C del header -- */
 
   .burger-menu {
@@ -238,6 +235,7 @@ footer {
   }
 
           /* **** BODY ****/
+
 
   /** TARJETA DE PRODUCTOS **/
 
@@ -249,13 +247,17 @@ footer {
   }
 
   .producto {
-    box-shadow: 10px 5px 5px gray;
     width: 48%;
     margin: auto;
     margin-top: 10px;
+    transition: all 0.5s;
   }
 
+  
+
   .info-producto {
+    /*position: relative;
+    z-index: -1;*/
     display: flex;
     border-top: 1px #ebebeb solid;
     padding: 10px 8px 0px 8px;
@@ -263,8 +265,9 @@ footer {
     flex-wrap: wrap;
   }
 
+
  
-  .icono-truck
+.icono-truck
  /* ICONO */ {
     font-size: 20px;
     color: green;
@@ -300,9 +303,7 @@ footer {
 
   .nombre-articulo {
     display: flex;
-    
     width: 100%;
-    
     margin-top: 2px;
   }
 }
@@ -335,9 +336,7 @@ footer {
     padding: 2px;
       }
 
-  li i {
-    font-size: 16px;
-  }
+  
 
   article img {
     width: 90%;
@@ -360,7 +359,7 @@ footer {
   }
 
   .producto {
-    box-shadow: 10px 5px 5px gray;
+    
     width: 23%;
     margin: auto;
     margin-top: 10px;
@@ -380,10 +379,20 @@ footer {
   }
 
   /*** FOOTER ****/
+    .footer-section {
+      display: flex;
+      width: 100%;
+    }
 
   .footer-article {
+    width: 32%;
+    margin-top: 30px;
     border-top: 1px gray solid;
     padding-top: 10px;
-    margin: 40px 150px 0px 150px;
+    
+  }
+
+  .icon-footer:hover {
+    color: gray;
   }
 }
