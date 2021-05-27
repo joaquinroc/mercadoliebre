@@ -36,6 +36,8 @@ header {
 }
 
 
+
+
 .barra-de-busqueda {
   display: flex;
   width: 50%;
@@ -173,6 +175,10 @@ footer {
 
   .logo {
     width: 33.3%;
+  }
+
+  .logo img:hover{
+    width: 81%;
   }
 
   .barra-de-busqueda {
