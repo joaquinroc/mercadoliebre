@@ -171,8 +171,7 @@ header {
     }
   
   
-    a:hover,
-    a:active {
+    a:hover{
       font-size: 17px;
       border: 1px black solid;
       border-radius: 5px;

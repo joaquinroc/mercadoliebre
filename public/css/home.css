@@ -53,8 +53,6 @@ main {
 
 }
 
-
-
 /* Info del producto(sin img) */
 .info-producto {
   display: none;
@@ -64,38 +62,12 @@ main {
   font-size: 24px;
 }
 
-/****** FOOTER *******/
 
-
-
-footer {
-  text-align: center;
-  max-width: 100%;
-
-}
-
-
-
-.footer-article {
-  border-top: 1px gray solid;
-  margin: 20px 40px 10px 40px;
-  padding-top: 10px;
-}
-
-.icon-footer {
-  color: #03264c;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
 
 /********** MEDIA QUERYS TABLET *******/
 
 @media (min-width: 361px) {
   /* <----------- 361px --------->
-
-
-  /* **** BODY ****/
-
 
   /** TARJETA DE PRODUCTOS **/
 
@@ -127,7 +99,7 @@ footer {
     height: 12vh;
   }
 
-.nombre-articulo {
+  .nombre-articulo {
     display: flex;
     width: 100%;
     margin: 8px 2px 5px 2px;
@@ -144,27 +116,63 @@ footer {
     border-top: 1px #ebebeb solid;
     width: 100%;
     justify-content: flex-end;
-    }
+  }
 
-    .camion:hover>.icono-truck{
-      animation: camionAltura 0.5s normal;
-    }
+  .camion:hover>.icono-truck {
+    
+    animation: buyAmbulance 0.3s infinite;
+  }
 
   /* ICONO */
   .icono-truck {
-    font-size: 20px;
+    font-size: 16px;
     color: green;
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    border: 2px solid green;
+    padding: 6px;
+    border-radius: 28px;
+    transform: rotate(0deg);
     }
 
-@keyframes camionAltura {
-  0% {font-size: 20px;}
-  20% { font-size: 25px;}
-  40% {font-size: 20px;}
-  60% { font-size: 10px;}
-  80% {font-size: 5px; }
-  100% {font-size: 0px;}
+  
 
-}
+  @keyframes buyAmbulance {
+    0% {
+      color: green;
+      font-size: 17px;
+     
+    }
+
+    20% {
+      transform: rotate(-2deg);
+      color: rgb(30, 255, 0);
+      font-size: 18px;
+      
+    }
+
+    40% {
+      transform: rotate(-6deg);
+      color: rgba(115, 255, 0, 0.877);
+    }
+
+    60% {
+      transform: rotate(-10deg);
+      color: rgb(9, 185, 9);
+    }
+
+    80% {
+      transform: rotate(-14deg);
+      color: rgb(17, 182, 2);
+    }
+
+    100% {
+      transform: rotate(-20deg);
+      color: rgb(19, 141, 3);
+    }
+
+  }
 
   .precio {
     display: flex;
@@ -237,25 +245,8 @@ footer {
 
   .nombre-articulo {
     font-size: 14px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-  }
-
-  /*** FOOTER ****/
-  .footer-section {
-    display: flex;
-    width: 100%;
-  }
-
-  .footer-article {
-    width: 32%;
-    margin-top: 30px;
-    border-top: 1px gray solid;
-    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
   }
 
-  .icon-footer:hover {
-    color: gray;
-  }
 }

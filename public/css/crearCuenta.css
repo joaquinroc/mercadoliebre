@@ -112,7 +112,7 @@ button:hover {
 }
 
 
- /************* MEDIA QUERY DESKTOP **********/
+/************* MEDIA QUERY DESKTOP **********/
 
  @media (min-width: 769px) {
   
@@ -122,8 +122,12 @@ button:hover {
 main form {
   width: 40%;
   font-size: 18px;
-  
+}
 
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .input {
