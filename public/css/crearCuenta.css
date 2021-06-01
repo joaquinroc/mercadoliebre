@@ -77,17 +77,18 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .botona {
+ 
   border-radius: 2px;
   color: white;
   background-color:rgb(88, 91, 252) ;
   transition: all 0.5s;
 }
 
-button:hover {
+.botona:hover {
   background-color: #0022AA;
   
 }
